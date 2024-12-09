@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT DURG - Transforming Education, Inspiring Futures</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #004080;
+            --secondary-color: #ff7f50;
+            --accent-color: #ffd700;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section-header {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 20px;
+            margin-bottom: 50px;
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .logo-section img {
+            max-height: 100px;
+            filter: grayscale(30%);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-section img:hover {
+            transform: scale(1.1);
+        }
+
+        .achievement-card {
+            background-color: #f8f9fa;
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+/* Button Styles */
+    .btn-register {
+        display: inline-block;
+        padding: 14px 28px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #004080;
+        background: #fff;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-register:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 20px rgba(107, 54, 5, 0.3);
+    }
+
+    .btn-register i {
+        margin-right: 8px;
+    }
+
+
+        .faculty-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <img src="CG.JPG" alt="BIT Logo" class="img-fluid rounded shadow-lg" style="max-width: 550px; height:AUTOPX;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#logos">Associations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#office-bearers">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#students-corner">Students Corner</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Home/Hero Section -->
+<section id="home" class="container-fluid p-5 bg-light text-dark text-center position-relative">
+    <!-- Background Video -->
+    <video class="background-video" src="video bit durg.mp4" loop autoplay muted></video>
+
+    <div class="row align-items-center position-relative" style="z-index: 2;">
+        <div class="col-md-6 text-start">
+            <h1 class="display-4 fw-bold"><FONT COLOR="#a8ace7">Welcome to BIT DURG</FONT></h1>
+            <p class="lead mt-3"><FONT COLOR="#766e8b">
+                Transforming Education, Inspiring Futures.<br>
+                A Premier Institution for Engineering and Technology.
+            </p></FONT>
+            <a href="#about" class="btn btn-primary btn-lg mt-4 px-5 shadow">
+                Learn More
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+    #home {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+        -webkit-filter: blur(5PX);
+
+    }
+
+    #home .row {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+</section>
+    <!-- Logos/Associations Section -->
+    <section id="logos" class="container logo-section my-5">
+        <h2 class="section-header text-center">Our Associations</h2>
+        
+        <div class="row justify-content-center">
+                <div class="col-md-3 col-6 text-center mb-3">
+                <img src="si.jpg" alt="IEEE SB Logo" class="img-fluid">
+            </div>
+            <div class="col-md-3 col-6 text-center mb-3">
+                <img src="ieee.jpg" alt="IEEE CS Logo" class="img-fluid">
+            </div>
+            <div class="col-md-3 col-6 text-center mb-3">
+                <img src="c.jpg" alt="IEEE Logo" class="img-fluid">
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- About Section -->
+    <section id="about" class="container my-5">
+        <h2 class="section-header text-center">About BIT DURG</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <p class="text-center">
+                    Bhilai Institute of Technology (BIT), Durg, established in 1986, is a premier engineering institution in Chhattisgarh, India. 
+                    Accredited by the NBA and NAAC with an 'A' grade, BIT Durg is committed to academic excellence, research innovation, 
+                    and fostering a vibrant student community.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="container my-5">
+        <h2 class="section-header text-center">Achievements</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card achievement-card card-hover">
+                    <i class="bi bi-trophy display-4 text-primary mb-3"></i>
+                    <h4>Top Ranked</h4>
+                    <p>Among top 100 private engineering institutions</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card achievement-card card-hover">
+                    <i class="bi bi-globe display-4 text-success mb-3"></i>
+                    <h4>Global Collaborations</h4>
+                    <p>Research partnerships with leading institutions</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card achievement-card card-hover">
+                    <i class="bi bi-briefcase display-4 text-warning mb-3"></i>
+                    <h4>Excellent Placements</h4>
+                    <p>90%+ placement record with top recruiters</p>
+                </div>
+            </div>
+        </div>
+
+<!-- Registration Button -->
+        <div class="text-center mt-4">
+    <a href="https://forms.gle/Q9eQCk6wm3UX9u6z7" 
+       class="btn-register shadow-lg" 
+       target="_blank" 
+       style="color: #fff; background: linear-gradient(to right, #004080, #ff7f50); padding: 12px 30px; font-size: 20px; border-radius: 40px; text-decoration: none; transition: transform 0.3s, box-shadow 0.3s; display: inline-flex; align-items: center;">
+        <i class="bi bi-pencil-square" style="margin-right: px; font-size: 24px;"></i> 
+        Register for IEEE
+    </a>
+</div>
+
+    </section>
+
+  
+       
+        <!-- Office Bearers/Faculty Section -->
+    <section id="office-bearers" class="container my-5">
+        <h2 class="section-header text-center">Office Bearers</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card text-center card-hover">
+                    <div class="card-body">
+                        <img src="rajivsir(1).jpg" alt="Rajiv Sir" class="faculty-photo mb-3">
+                        <h5>Rajiv Sir</h5>
+                        <p>Associate Professor</p>
+                        <p>Electronics Department</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center card-hover">
+                    <div class="card-body">
+                        <img src="DSC sir(2).jpg" alt="Dr. N.K. Singh" class="faculty-photo mb-3">
+                        <h5>Dr. N.K. Singh</h5>
+                        <p>Professor</p>
+                        <p>Mathematics Department</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center card-hover">
+                    <div class="card-body">
+                        <img src="kuma(3).jpg" alt="Mr. Rahul Kumar" class="faculty-photo mb-3">
+                        <h5>Mr. Rahul Kumar</h5>
+                        <p>Associate Professor</p>
+                        <p>Computer Science Department</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Events Section -->
+    <section id="events" class="container my-5">
+        <h2 class="section-header text-center">Upcoming Events</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+<img src="cam oath.WEBP" alt="BIT Logo" class="img-fluid"width="40%; height="15%">
+
+
+                <div class="timeline-item card-hover">
+                    <h4>Oath Taking Ceremony</h4>
+                    <p><strong>Date:</strong> 15th November 2024</p>
+                    <p><strong>Time:</strong> 10:00 AM</p>
+                    <p><strong>Venue:</strong> BIT Auditorium</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+ <img src="img.WEBP" alt="BIT Logo" class="img-fluid" width="50%">
+ 
+
+                <div class="timeline-item card-hover">
+                    <h4>Company in Focus</h4>
+                    <p><strong>Date:</strong> 22nd November 2024</p>
+                    <p><strong>Time:</strong> 2:00 PM</p>
+                    <p><strong>Venue:</strong> Seminar Hall</p>
+                </div>
+            </div>
+        </div>
+<!-- Event Registration -->
+<div class="row mt-4">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title text-center mb-4">Event Registration</h4>
+                <form id="eventRegistrationForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="eventName" placeholder="Full Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="eventEmail" placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control" id="eventSelect" required>
+                            <option value="">Select Event</option>
+                            <option value="Oath Taking Ceremony">Oath Taking Ceremony</option>
+                            <option value="Company in Focus">Company in Focus</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Students Corner -->
+<section id="students-corner" class="container my-5">
+    <h2 class="section-header text-center">Students Corner</h2>
+    
+    <div class="row">
+        <!-- Exam Notifications -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Exam Notifications</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Final Exams: 15th Dec 2024</li>
+                        <li class="list-group-item">Mid-Term Exams: 5th Jan 2025</li>
+                        <li class="list-group-item">Practical Exams: 25th Jan 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Feedback Form</h4>
+                    <form id="feedbackForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="feedbackName" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-control" id="feedbackType" required>
+                                <option value="">Select Feedback Type</option>
+                                <option value="Academic">Academic</option>
+                                <option value="Infrastructure">Infrastructure</option>
+                                <option value="Faculty">Faculty</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="feedbackComment" placeholder="Your Feedback" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Complaint Form -->
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Complaint Form</h4>
+                    <form id="complaintForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="complaintName" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="complaintTitle" placeholder="Complaint Title" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="complaintDetails" placeholder="Complaint Details" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger w-100">Submit Complaint</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+  // Event Registration Handling
+  document.getElementById("eventRegistrationForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("eventName").value.trim();
+    const email = document.getElementById("eventEmail").value.trim();
+    const event = document.getElementById("eventSelect").value;
+
+    if (name && email && event) {
+      alert(`Registration Successful!\nName: ${name}\nEmail: ${email}\nEvent: ${event}`);
+      this.reset();
+    } else {
+      alert("Please fill out all required fields.");
+    }
+  });
+
+  // Feedback Form Handling
+  document.getElementById("feedbackForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("feedbackName").value.trim();
+    const type = document.getElementById("feedbackType").value;
+    const comment = document.getElementById("feedbackComment").value.trim();
+
+    if (name && type && comment) {
+      alert(`Feedback Submitted!\nName: ${name}\nType: ${type}\nComment: ${comment}`);
+      this.reset();
+    } else {
+      alert("Please fill out all required fields.");
+    }
+  });
+
+  // Complaint Form Handling
+  document.getElementById("complaintForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("complaintName").value.trim();
+    const title = document.getElementById("complaintTitle").value.trim();
+    const details = document.getElementById("complaintDetails").value.trim();
+
+    if (name && title && details) {
+      alert(`Complaint Submitted!\nName: ${name}\nTitle: ${title}\nDetails: ${details}`);
+      this.reset();
+    } else {
+      alert("Please fill out all required fields.");
+    }
+  });
+</script>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 BIT DURG. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
